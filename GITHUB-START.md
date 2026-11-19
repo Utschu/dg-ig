@@ -20,7 +20,7 @@ Wir brauchen deinen GitHub-Benutzernamen und den gewünschten Repository-Namen
 Die Adresse für `canonical` hat diese Form:
 
 ```text
-https://BENUTZERNAME.github.io/REPOSITORY
+https://utschu.github.io/dg-ig
 ```
 
 ## 2. Leeres Repository auf GitHub erstellen
@@ -37,7 +37,7 @@ Das lokale Repository wird bereits vorbereitet. Den folgenden Platzhalter erst
 durch die tatsächliche Repository-Adresse ersetzen:
 
 ```powershell
-git remote add origin https://github.com/BENUTZERNAME/REPOSITORY.git
+git remote -v
 git push -u origin main
 ```
 
@@ -54,8 +54,8 @@ Passwörter und Tokens nicht in Projektdateien oder in den Chat kopieren.
 Nach erfolgreichem Deployment:
 
 ```text
-https://BENUTZERNAME.github.io/REPOSITORY/
-https://BENUTZERNAME.github.io/REPOSITORY/qa.html
+https://utschu.github.io/dg-ig/
+https://utschu.github.io/dg-ig/qa.html
 ```
 
 ## 5. Spätere Änderungen hochladen
