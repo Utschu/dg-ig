@@ -1,0 +1,25 @@
+# Von SUSHI und IG Publisher erzeugt, nicht einchecken
+fsh-generated/
+output/
+temp/
+template/
+input-cache/
+publisher.jar
+*.log
+.DS_Store
+
+# Lokale Werkzeuge und Cache
+node_modules/
+.npm-cache/
+ig.ini
+
+# Lokale Zugangsdaten
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Windows
+Thumbs.db
+Desktop.ini
