@@ -13,9 +13,7 @@ Das ZIP und das Aufgabenblatt ausserhalb dieses Ordners gehören nicht zum Repos
 
 ## 1. Namen festlegen
 
-Wir brauchen deinen GitHub-Benutzernamen und den gewünschten Repository-Namen
-(Vorschlag: `dg-ig`). Danach passen wir in `sushi-config.yaml` die Paket-ID,
-`canonical`, Name, Titel, Beschreibung und Herausgeber gemeinsam an.
+Das Repository ist `Utschu/dg-ig`. Konfiguration und Pages-Adresse sind angepasst.
 
 Die Adresse für `canonical` hat diese Form:
 
@@ -33,8 +31,7 @@ https://utschu.github.io/dg-ig
 
 ## 3. Lokal mit GitHub verbinden und hochladen
 
-Das lokale Repository wird bereits vorbereitet. Den folgenden Platzhalter erst
-durch die tatsächliche Repository-Adresse ersetzen:
+Das lokale Repository ist mit `https://github.com/Utschu/dg-ig.git` verbunden:
 
 ```powershell
 git remote -v
@@ -67,11 +64,19 @@ git commit -m "IG aktualisieren"
 git push
 ```
 
-## Noch offene Inhalte
+## Inhalte und Prüfung
 
-Die Vorlage enthält noch TODOs in `sushi-config.yaml`, `input/fsh/profil.fsh`,
-`input/fsh/beispiele.fsh` und `input/pagecontent/index.md`.
-Der Upload allein vervollständigt diese Übungsaufgaben nicht.
-Ein erfolgreicher Build und der QA-Report müssen nach dem Upload geprüft werden.
+Konfiguration, Allergieprofil, zwei Beispieldarstellungen und die Startseite sind ausgefüllt.
+Als Autor ist der GitHub-Name Utschu eingetragen.
+
+Lokal mit derselben SUSHI-Version wie in GitHub Actions prüfen:
+
+```powershell
+npx --yes --package fsh-sushi@3.21.0 sushi build .
+```
+
+Nach dem Push den aktuellen GitHub-Actions-Lauf und den QA-Report prüfen.
+Für die Abgabe muss der QA-Report keine Errors enthalten. Warnungen nur nach
+inhaltlicher Prüfung und mit Begründung in `input/ignoreWarnings.txt` unterdrücken.
 
 Offizielle Anleitung: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
